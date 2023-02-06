@@ -1,16 +1,52 @@
-# This is a sample Python script.
+import turtle as t
+#
+# timmy = t.Turtle()
+# screen = t.Screen()
+#
+# def move_forward():
+#     timmy.forward(10)
+#
+# screen.listen()
+# screen.onkey(key="space",fun=move_forward)
+#
+# screen.exitonclick()
+#
 
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
+
+# EtchASketch
+
+def move_forward():
+    sketcher.forward(50)
+def turn_left():
+    sketcher.left(90)
+def turn_right():
+    sketcher.right(90)
+def move_backwards():
+    sketcher.back(50)
+
+def reset_screen():
+    sketcher.reset()
+
+sketcher = t.Turtle()
+screen = t.Screen()
+screen.listen()
+screen.onkey(key='w',fun=move_forward)
+screen.onkey(key='s',fun=move_backwards)
+screen.onkey(key='d',fun=turn_right)
+screen.onkey(key='a',fun=turn_left)
+screen.onkey(key='c',fun=reset_screen)
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+
+
+
+
+screen.exitonclick()
+
+
+
+
+
